@@ -2,6 +2,11 @@
 
 public abstract class BaseSolution
 {
+    protected BaseSolution(int dayNumber)
+    {
+        DayNumber = dayNumber;
+    }
+
     public int DayNumber { get; }
 
     /// <summary>
@@ -31,6 +36,6 @@ public abstract class BaseSolution
     /// </summary>
     private string GetPath()
     {
-        return $"./Input/{DayNumber}.txt";
+        return $"./Inputs/{DayNumber}.txt";
     }
 }

@@ -8,13 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Inputs\"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ContentWithTargetPath Include="Boilerplate\**\*.cs" Exclude="**\*.csproj;**\*.sln;**\*.user;**\*.vspscc;**\*.vssscc;**\*.csproj.user;**\*.csproj.vspscc;**\*.csproj.vssscc;**\bin\**\*;**\obj\**\*">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <TargetPath>Boilerplate\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+        <ContentWithTargetPath Include="Inputs\*.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <TargetPath>Inputs\%(Filename)%(Extension)</TargetPath>
         </ContentWithTargetPath>
     </ItemGroup>
 
